@@ -1,0 +1,90 @@
+body {
+  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(rgba(0, 0, 0, 0.5)), to(black)), url("../img/panorama.jpg");
+  background-image: -webkit-linear-gradient(top, black, rgba(0, 0, 0, 0.5), black), url("../img/panorama.jpg");
+  background-image: -o-linear-gradient(top, black, rgba(0, 0, 0, 0.5), black), url("../img/panorama.jpg");
+  background-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0.5), black), url("../img/panorama.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed; }
+
+.container-fluid {
+  max-width: 1200px; }
+
+section {
+  padding-top: 100px; }
+
+.row, footer, .info {
+  padding: 20px;
+  text-align: center;
+  font-size: 20px; }
+
+.row {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.info {
+  margin: 20px; }
+
+.navbar {
+  min-height: auto;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px; }
+  .navbar .navbar-brand :hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+
+.navbar-nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.nav-item {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.jumbotron-fluid {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 25px;
+  border-style: solid;
+  border-color: black; }
+
+.info {
+  border-radius: 25px;
+  border-style: solid;
+  border-color: white; }
+
+.link {
+  text-decoration: none;
+  color: white; }
+
+.link:hover {
+  text-decoration: none;
+  color: red; }
+
+@media only screen and (max-width: 420px) {
+  .display-4 {
+    font-size: 12vw; }
+  .navbar-brand {
+    display: none; } }
+
+@media only screen and (max-width: 768px) {
+  #torun_sport {
+    display: none; }
+  .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly; } }
+
+@media only screen and (max-width: 992px) {
+  #torun_sport {
+    display: none; } }
