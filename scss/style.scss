@@ -1,90 +1,141 @@
-@mixin  link_style($color) {
+@mixin link_style($color) {
   text-decoration: none;
-  color:$color;
+  color: $color;
 }
 
-body{
-    color:white;
-    background-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0.5), black), url("../img/panorama.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
-    background-attachment: fixed;
+body {
+  color: white;
+  background-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0.5), black),
+    url("../img/panorama.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
 }
 
-.container-fluid{
-  max-width:1200px;
+.container-fluid {
+  max-width: 1200px;
 }
 
-section{
-  padding-top:100px;
+section {
+  padding-top: 100px;
 }
 
-.row,footer,.info{
-  padding:20px;
+.row,
+footer,
+.info {
+  padding: 20px;
   text-align: center;
-  font-size:20px;
+  font-size: 20px;
 }
 
-.row{
+.row {
   justify-content: center;
 }
-.info{
-  margin:20px;
-}
-  
-  .navbar {
-    min-height: auto;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px; 
-    .navbar-brand{
-        :hover{ transform: scale(1.1);}
-    } 
+
+.card {
+  margin: 5px;
+  padding: 10px;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
-.navbar-nav{
+.card:hover {
+  transform: scale(1.05);
+  transition: 500ms;
+}
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+.card-title{
+  font-size:1.5vw;
+}
+
+
+
+.info {
+  margin: 20px;
+}
+
+.navbar {
+  min-height: auto;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  .navbar-brand {
+    :hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.navbar-nav {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.nav-item{
-  margin-left:10px;
-  margin-right:10px;
+.nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.jumbotron-fluid{
-  padding:20px;
-  background-color: rgba(0,0,0,0.75);
-  border-radius:25px;
-  border-style:solid;
-  border-color:black;
-}
-
-.info{
-  border-radius:25px;
+.jumbotron-fluid {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 25px;
   border-style: solid;
-  border-color:white;
+  border-color: black;
 }
 
-.link{@include link_style(white)}
-.link:hover{@include link_style(red)}
+.info {
+  border-radius: 25px;
+  border-style: solid;
+  border-color: white;
+}
 
+.link {
+  @include link_style(white);
+}
+.link:hover {
+  @include link_style(red);
+}
 
-  @media only screen and (max-width: 420px) {
-    .display-4{font-size: 12vw;}
-    .navbar-brand {
-      display:none; } 
-    }
-  
-  @media only screen and (max-width: 768px) {
-    #torun_sport {
-      display: none; } 
-  
-      .navbar-brand{
-        display:flex;
-        justify-content: space-evenly;
-      }
-    }
-  
-      @media only screen and (max-width: 992px) {
-        #torun_sport {
-          display: none; } }
-  
+@media only screen and (max-width: 420px) {
+  .display-4 {
+    font-size: 12vw;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  .card-title{
+    font-size:3.5vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #torun_sport {
+    display: none;
+  }
+
+  .navbar-brand {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .card-title{
+    font-size:5vw;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #torun_sport {
+    display: none;
+  }
+  .card-title{
+    font-size:4vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .card-title{
+    font-size:3vw;
+  }
+}
