@@ -1,8 +1,29 @@
 # hercules
-"TKM" Hercules website
 
-Live preview: https://tomaszlektorowski.github.io/hercules/
+Typical, simple website about scale modeling
 
-Simple website created with usage of HTML5/CSS3/Javascript/Fotorama.js/Bootstrap4/SASS
+Technologies used:
+HTML5,
+CSS3,
+JS,
+FOTORAMA.JS
+BOOTSTRAP,
+SASS
 
-Updated version is hosted here: http://hercules.mosir.torun.pl/
+
+## Getting Started
+
+This project does not require any form of installation - just use it as GitHub Pages Live Preview: 
+https://tomaszlektorowski.github.io/hercules/
+
+Updated, live-hosted version is available here: http://hercules.mosir.torun.pl/
+
+
+## Author
+
+Tomasz Lektorowski
+
+
+## License
+
+This project is licensed under the MIT License
